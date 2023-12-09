@@ -1,5 +1,5 @@
-import NavBar from "@/components/NavBar";
-import Sidebar from "@/components/Sidebar";
+import { Navbar } from "@/components/navbar";
+import Sidebar from "@/components/sidebar";
 
 const AuthLayout = ({
     children,
@@ -8,7 +8,7 @@ const AuthLayout = ({
 }) => {
     return (
         <div className="h-full">
-            <NavBar />
+            <Navbar />
             <div className="hidden md:flex mt-16 w-20 flex-col fixed insert-y-0">
                 <Sidebar />
             </div>
